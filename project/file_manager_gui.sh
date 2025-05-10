@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Include the required scripts
@@ -142,7 +143,6 @@ while true; do
                     BACKUP_OPTIONS+=($i "$(basename "$f")")
                     ((i++))
                 done
-
                 if [ ${#BACKUP_OPTIONS[@]} -eq 0 ]; then
                     dialog --msgbox "No backup files found!" 6 40
                 else
@@ -161,7 +161,6 @@ while true; do
             clear
             break
             ;;
-
         *)
             dialog --msgbox "Invalid Option. Please try again." 6 40
             ;;
